@@ -32,9 +32,14 @@ db.mongoose
     });
 
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8011;
+const IP = process.env.IP;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}.`);
 });
+app.listen(IP, () => {
+    console.log(`Server is running on ip ${IP}.`);
+});
+
 
 
